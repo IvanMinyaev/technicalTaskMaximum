@@ -1,3 +1,5 @@
+
+import '../styles/custom-bootstrap.css'
 import '../styles/globals.css';
 import Layout from '../components/Layout/Layout.jsx';
 import { GlobalProvider } from '../components/GlobalContext/GlobalContext';
