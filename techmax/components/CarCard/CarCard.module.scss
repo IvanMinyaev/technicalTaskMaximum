@@ -1,0 +1,61 @@
+.card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 32px #0E2A6029;
+  border-radius: 8px;
+  opacity: 1;
+  img{
+    width: 100%;
+  }
+  
+  .modelName{
+    min-height: 48px;
+    font-size: 1.3rem;
+  }
+  .modelYear{
+    color: #22BF86;
+  }
+
+  .vin{
+    font-size: 0.9rem;
+    color: #707B8C;
+    margin-bottom: 1rem;
+  }
+
+  .propTitle{
+    color: #ACB8BF;
+    font-size: 0.7rem;
+  }
+
+  .grnColor{
+    color: #22BF86;
+  }
+  .propDivider::before, .propDivider::after{
+    content: '  ';
+  }
+}
+
+.priceFont{
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 0;
+  color: #22BF86;
+  opacity: 1;
+
+  span{
+    color: #303030;
+  }
+}
+
+.btn {
+  background: transparent linear-gradient(252deg, #11998E 0%, #38EF7D 100%) 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  text-align: center;
+  height: 3.4rem;
+  width: 10.3rem;
+  border: 0;
+}
+
+

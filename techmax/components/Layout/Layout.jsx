@@ -4,17 +4,17 @@ import { GlobalProvider } from "../GlobalContext/GlobalContext";
 import CardsList from "../CardsList/CardsList";
 import CarFilter from "../CarFilter/CarFilter";
 
+import styles from './Layout.module.scss'
+
 
 function Layout() {
 
-  const [brand, setBrand] = useState();
-  const [brandsList, setBrandsList] = useState([]);
-
-
   return (
     <GlobalProvider>
+      <div className={styles.main}>
       <CarFilter />
       <CardsList />
+      </div>
     </GlobalProvider>
   );
 }

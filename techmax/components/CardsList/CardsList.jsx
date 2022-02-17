@@ -1,17 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../GlobalContext/GlobalContext";
 
-import { v4 as uuidv4 } from 'uuid';
-
 import CarCard from "../CarCard/CarCard";
 
-function CardsList(props) {
+function CardsList() {
 
   const [cars, setCars] = useState(null);
-  // const [brand, setBrand] = useState('');
-
   const { brand } = useContext(GlobalContext);
-  const { setBrand } = useContext(GlobalContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,16 +17,10 @@ function CardsList(props) {
     fetchData();
   }, [brand]);
 
-
   return (
-
-    // <div className="row">
-    //   {cars?.length && cars.map(car => <CarCard key={car._id} car={car}/>) }
-    // </div>
-    <ul>
-      {cars?.map(car => <li key={car._id}>{car.classifieds.description}</li>)}
-    </ul>
-
+    <div className="row m-0">
+      {cars?.length && cars.map(car => <CarCard key={car._id} car={car} />)}
+    </div>
   );
 }
 
